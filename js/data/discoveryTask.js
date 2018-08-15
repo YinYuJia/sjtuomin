@@ -40,6 +40,7 @@
     //   编辑
     $("#Edit").on("click", function () {
         alert($(this).val())
+        console.log(1111)
     })
     //    删除
     $("#Delete").on("click", function () {
@@ -63,7 +64,7 @@
     $("#discoveryTask").on("click",function() {
         window.location.href = "../../discoveryTask.html"
     })
-
+    
 })();
 
 (function() {
