@@ -1,0 +1,130 @@
+#Tasked,#Tasking {
+    
+    float: left;
+    width: 22%;
+    height: 300px;
+    /* background-color: red; */
+    margin-top: 30px;
+}
+#Tasked {
+    margin-left: 30px;
+}
+#Tasking {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ .Tasked_up,.Tasking_up,.systemStatus_up,.systemInfo_up,.AuthorizationInfo_up{
+  height: 60px;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  line-height: 60px;
+}
+ .Tasked_down_left,.Tasking_down_left {
+    float: left;
+    height: 160px;
+    width: 48%;
+    /* background-color: yellow; */
+    margin-top: 20px;
+    border:1px solid black;
+}
+ .Tasked_down_right,.Tasking_down_right {
+    float: right;
+    height: 160px;
+    width: 48%;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    border:1px solid black;
+}
+.mgsjfx {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 120px;
+    text-decoration:underline;
+    color: black;
+}
+.mgsjtm {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+#systemStatus {
+    float: left;
+    width: 50%;
+    height: 300px;
+    /* background-color: red; */
+    margin-top: 30px;
+}
+.CPU,.Memory_footprint {
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    float: left;
+}
+.CPU_echart,.Memory_footprint_echart {
+    float: left;
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+#CPUdata,#MemoryData {
+    text-decoration: none ;
+}
+#systemInfo {
+    float: left;
+    width: 45%;
+    height: 300px;
+    /* background-color: red; */
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.systemInfo_u,.systemInfo_i {
+    display: inline-block;
+   height: 40px;
+   /* background-color: blueviolet; */
+   width: 30%;
+   text-align: right;
+   text-decoration: none;
+   line-height: 40px;
+   font-size: 16px;
+}
+.systemInfo_i {
+    width: 65%;
+    text-align: left;
+    text-indent: 10px;
+}
+#AuthorizationInfo {
+    float: left;
+    width: 50%;
+    height: 300px;
+    margin-top: 15px;
+}
+@media screen and (max-width:1700px) {
+    #AuthorizationInfo {
+        width: 43%;
+    }
+    #systemStatus {
+        width: 43%;
+    }
+    .mgsjfx {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:1250px) {
+    #AuthorizationInfo {
+        width: 35%;
+    }
+    #systemStatus {
+        width: 35%;
+    }
+    .mgsjfx {
+        font-size: 40px;
+    }
+}
+
+

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数据</title>
+    <link rel="stylesheet" href="./css/easyui.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/data/data.css">
+</head>
+
+<body>
+    <!-- 遮罩层 -->
+    <div id="dsMssk1"></div>
+
+    <!-- loadgif -->
+    <div id="loadGif"><img src="./img/loading.gif" alt=""></div>
+    
+    <!-- 导航栏 -->
+    <nav id="navBar">
+        <img src="./img/index/u22.png" alt="" id="navBar_Img">
+        <i id="navBar_title">闪捷数据库脱敏系统</i>
+        <div id="navBar_list">
+            <ul id="navBar_list_ul">
+                <li>
+                    <a href="./index.html">首页</a>
+                </li>
+                <li class="border_bottom">
+                    <a href="#">数据</a>
+                </li>
+                <li>
+                    <a href="./strategy.html">策略</a>
+                </li>
+                <li>
+                    <a href="./Desensitization.html">脱敏</a>
+                </li>
+                <li>
+                    <a href="./logs.html">日志</a>
+                </li>
+                <li>
+                    <a href="./System.html">系统</a>
+                </li>
+            </ul>
+        </div>
+        <div id="Admin">
+            <img src="./img/index/u30.png" alt="" id="Admin_Img">
+            <a href="" id="Admin_a">admin</a>
+        </div>
+    </nav>
+
+    <!-- 主体 -->
+    <div id="mainBody">
+        <div id="mainBody_left">
+            <ul id="theUl">
+                <li class="bgimg bg" id="DataSourceManagement">数据管理
+                    <img src="./img/index/u36.png" alt="" class="bgc_img">
+                </li>
+                <li class="bgimg2 bg" id="dataSetManagement">数据集管理
+                    <img src="./img/index/u36.png" alt="" class="bgc_img">
+                </li>
+            </ul>
+            <div id="control"></div>
+        </div>
+
+        <div id="mainBody_right">
+            <div id="rightContanir">
+                <!-- 数据源管理页面首页 -->
+                <div class="mainBody_right_Number1" >
+                    <div class="tools">
+                        <!-- 提示内容框 -->
+
+                        <p class="dataInfo">数据管理</p>
+                        <!--表详情按钮-->
+                        <div class="tblistDetail">
+
+                            <button id="NewData">新增</button>
+                            <button id="Edit">编辑</button>
+                            <button id="Delete">删除</button>
+                            <button id="ManualQuery">手动查询</button>
+                            <button onclick="datasourcse()" style="display:none">测试ajax</button>
+                            <button onclick="ajaxb()" style="display:none">测试ajax2</button>
+                            <!-- <input type="button" id="ajax_b" value="测试ajax"> -->
+                        </div>
+                    </div>
+
+                    <!-- easy表格部分 -->
+
+                    <!-- 数据源 -->
+                    <div id="dbSourceListContainer">
+                        <table id="dbSourceList" class="easyui-datagrid" style="width: 100%;height: 100%" rownumbers="false" pagination="false" data-options="collapsible:true">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 新增 -->
+                <div class="mainBody_right_Number3" id="newAdd">
+                    <ul class="titile_ul">
+                        <li>
+                            <a href="#">数据管理></a>
+                        </li>
+                        <li>
+                            <a href="#">数据源管理></a>
+                        </li>
+                        <li>
+                            <a href="#">新增数据源</a>
+                        </li>
+                    </ul>
+                    <div class="userNamelist">
+                        <span>数据源名称：</span>
+                        <input type="text" id="newAddSourceName" style="width: 30%">
+                    </div>
+                    <div class="userNamelist">
+                        <span>数据源格式：</span>
+                        <select style="width: 30%">
+                            <option value="Oracle数据库">Oracle数据库</option>
+                            <option value="SQL Server数据库">SQL Server数据库</option>
+                            <option value="MySQL数据库">MySQL数据库</option>
+                            <option value="结构化文本">结构化文本</option>
+                        </select>
+                    </div>
+                    <div class="userNamelist">
+                        <span>IP地址：</span>
+                        <input type="text" id="newAddAddress" style="width: 30%">
+                    </div>
+                    <div class="userNamelist">
+                        <span>端口：</span>
+                        <input type="text" id="newAddPort" style="width: 30%">
+                    </div>
+                    <div class="userNamelist">
+                        <span>用户名：</span>
+                        <input type="text" id="newAddUserName" style="width: 30%">
+                    </div>
+                    <div class="userNamelist">
+                        <span>密码：</span>
+                        <input type="password" id="newAddPassWord" style="width: 30%">
+                    </div>
+                    <div class="userNamelist">
+                        <span></span>
+                        <input type="button" name="" id="" value="保存" class="save SbmBtnColor">
+                        <input type="button" name="" id="newAddCancel" value="取消" class="save">
+                        <!-- <button id="manualSubmit111">导出</button>
+                                <button onclick="unmanualSubmit()">取1消</button> -->
+                    </div>
+                </div>
+
+                <!-- 编辑 -->
+                <div class="mainBody_right_Number4" id="edit">
+                        <ul class="titile_ul">
+                                <li>
+                                    <a href="#">数据管理></a>
+                                </li>
+                                <li>
+                                    <a href="#">数据源管理></a>
+                                </li>
+                                <li>
+                                    <a href="#">编辑数据源</a>
+                                </li>
+                            </ul>
+                            <div class="userNamelist">
+                                <span>数据源名称：</span>
+                                <input type="text" id="editSourceName" style="width: 30%">
+                            </div>
+                            <div class="userNamelist">
+                                <span>数据源格式：</span>
+                                <select style="width: 30%">
+                                    <option value="Oracle数据库">Oracle数据库</option>
+                                    <option value="SQL Server数据库">SQL Server数据库</option>
+                                    <option value="MySQL数据库">MySQL数据库</option>
+                                    <option value="结构化文本">结构化文本</option>
+                                </select>
+                            </div>
+                            <div class="userNamelist">
+                                <span>IP地址：</span>
+                                <input type="text" id="editAddress" style="width: 30%">
+                            </div>
+                            <div class="userNamelist">
+                                <span>端口：</span>
+                                <input type="text" id="editPort" style="width: 30%">
+                            </div>
+                            <div class="userNamelist">
+                                <span>用户名：</span>
+                                <input type="text" id="editUserName" style="width: 30%">
+                            </div>
+                            <div class="userNamelist">
+                                <span>密码：</span>
+                                <input type="password" id="editPassWord" style="width: 30%">
+                            </div>
+                            <div class="userNamelist">
+                                <span></span>
+                                <input type="button" name="" id="" value="保存" class="save SbmBtnColor">
+                                <input type="button" name="" id="editCancel" value="取消" class="save">
+                                <!-- <button id="manualSubmit111">导出</button>
+                                        <button onclick="unmanualSubmit()">取1消</button> -->
+                            </div>
+                </div>
+                <!-- 数据子集管理页面 -->
+                <div class="mainBody_right_Number2">
+                    <div class="tools">
+                        <!-- 提示内容框 -->
+
+                        <p class="dataInfo">数据集管理</p>
+                        <!--表详情按钮-->
+                        <div class="tblistDetail">
+                            <button onclick="ajaxb()">测试ajax</button>
+                            <!-- <input type="button" id="ajax_b" value="测试ajax"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧边蓝 -->
+    <div id="SideBar">
+        <div class="showorhide1">
+            <p class="encryptionText">手动查询</p>
+            <form action="" id="addDB" method="" novalidate>
+                <div class="userNamelist">
+                    <span>源名称：</span>
+                    <input type="text" id="SourceName">
+                </div>
+                <div class="userNamelist">
+                    <span>源格式：</span>
+                    <select>
+                        <option value="oracle数据库">Oracle数据库</option>
+                        <option value="SQL Server数据库">SQL Server数据库</option>
+                        <option value="MySQL数据库">MySQL数据库</option>
+                        <option value="结构化文本">结构化文本</option>
+                    </select>
+                </div>
+                <div class="userNamelist">
+                    <span>源类型：</span>
+                    <select>
+                        <option value="源数据">源数据</option>
+                        <option value="目标数据">目标数据</option>
+                    </select>
+                </div>
+                <div class="btns">
+                    <input type="button" value="查询" id="Query" class="SbmBtnColor">
+                    <input type="button" value="重置" id="reSet">
+                    <input type="button" value="取消" id="unshoworhide1">
+                    <!-- <button id="manualSubmit111">导出</button>
+                            <button onclick="unmanualSubmit()">取1消</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">Copyright &copy; 杭州闪捷信息科技股份有限公司 2018</footer>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/jquery.easyui.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/data/data.js"></script>
+
+</body>
+
+</html>

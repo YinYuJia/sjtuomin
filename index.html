@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>闪捷脱敏系统首页</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index/index.css">
+    <link rel="stylesheet" href="./css/index/index-EssentialInformation.css">
+</head>
+
+<body>
+    <nav id="navBar">
+        <img src="./img/index/u22.png" alt="" id="navBar_Img">
+        <i id="navBar_title">闪捷数据库脱敏系统</i>
+        <div id="navBar_list">
+            <ul id="navBar_list_ul">
+                <li class="border_bottom">
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="./data.html">数据</a>
+                </li>
+                <li>
+                    <a href="./strategy.html">策略</a>
+                </li>
+                <li>
+                    <a href="./Desensitization.html">脱敏</a>
+                </li>
+                <li>
+                    <a href="./logs.html">日志</a>
+                </li>
+                <li>
+                    <a href="./System.html">系统</a>
+                </li>
+            </ul>
+        </div>
+        <div id="Admin">
+            <img src="./img/index/u30.png" alt="" id="Admin_Img">
+            <a href="#" id="Admin_a">admin</a>
+        </div>
+    </nav>
+
+    <div id="mainBody">
+        <div id="mainBody_left">
+            <ul>
+                <li class="bgimg" id="E_infoMation">基本信息
+                    <img src="./img/index/u36.png" alt="" class="bgc_img">
+                </li>
+            </ul>
+        </div>
+        <div id="mainBody_right">
+            <div id="rightContanir">
+                <!-- 基本信息右侧 -->
+                <div class="mainBody_right_Number1">
+                    <div class="tools">
+                        <!-- 提示内容框 -->
+
+                        <p class="dataInfo">首页信息</p>
+                        <!--表详情按钮-->
+                        <div class="tblistDetail">
+                            <button onclick="ajaxb()">测试ajax</button>
+                            <!-- <input type="button" id="ajax_b" value="测试ajax"> -->
+                        </div>
+                    </div>
+
+                    <!-- 已经执行的任务模块 -->
+                    <div id="Tasked">
+                        <div class="Tasked_up">
+                            <p>已执行的任务</p>
+                        </div>
+                        <div class="Tasked_down_left">
+                            <p class="mgsjfx">14</p>
+                            <p class="mgsjtm">敏感数据发现</p>
+                        </div>
+                        <div class="Tasked_down_right">
+                            <p class="mgsjfx">7</p>
+                            <p class="mgsjtm">敏感数据脱敏</p>
+                        </div>
+                    </div>
+
+                    <!-- 正在执行的任务模块 -->
+                    <div id="Tasking">
+                        <div class="Tasking_up">
+                            <p>正在执行的任务</p>
+                        </div>
+                        <div class="Tasking_down_left">
+                            <p class="mgsjfx">1</p>
+                            <p class="mgsjtm">敏感数据发现</p>
+                        </div>
+                        <div class="Tasking_down_right">
+                            <p class="mgsjfx">10</p>
+                            <p class="mgsjtm">敏感数据脱敏</p>
+                        </div>
+                    </div>
+
+                    <!-- 系统状态模块 -->
+                    <div id="systemStatus">
+                        <div class="systemStatus_up">
+                            <p>系统状态</p>
+                        </div>
+                        <div class="Tasking_down_left">
+                            <div class="CPU">
+                                <p class="mgsjfx" id="CPUdata">60%</p>
+                                <p class="mgsjtm">cpu占用</p>
+                            </div>
+                            <div class="CPU_echart" id="CPU_echart">
+
+                            </div>
+                        </div>
+                        <div class="Tasking_down_right">
+                            <div class="Memory_footprint">
+                                <p class="mgsjfx" id="MemoryData">50%</p>
+                                <p class="mgsjtm">内存占用</p>
+                            </div>
+                            <div class="Memory_footprint_echart" id="Memory_footprint_echart">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 系统信息模块 -->
+                    <div id="systemInfo">
+                        <div class="systemInfo_up">
+                            <p>系统信息</p>
+                        </div>
+                        <p>
+                            <u class="systemInfo_u ">产品型号:</u>
+                            <i class="systemInfo_i ">型号</i>
+                        </p>
+                        <p>
+                            <u class="systemInfo_u">软件版本:</u>
+                            <i class="systemInfo_i">33333333333</i>
+                        </p>
+                        <p>
+                            <u class="systemInfo_u">持续运行时间:</u>
+                            <i class="systemInfo_i">33333333333</i>
+                        </p>
+                        <p>
+                            <u class="systemInfo_u">系统时间:</u>
+                            <i class="systemInfo_i">爱对方是打发</i>
+                        </p>
+                    </div>
+
+                    <!-- 授权信息模块 -->
+                    <div id="AuthorizationInfo">
+                        <div class="AuthorizationInfo_up">
+                            <p>授权信息</p>
+                        </div>
+                        <p>
+                            <u class="systemInfo_u ">序列号:</u>
+                            <i class="systemInfo_i ">型号</i>
+                        </p>
+                        <p>
+                            <u class="systemInfo_u">授权信息:</u>
+                            <i class="systemInfo_i">33333333333</i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mainBody_right_Number2">
+                    2
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <footer id="footer">Copyright &copy; 杭州闪捷信息科技股份有限公司 2018</footer>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index/index.js"></script>
+    <script src="./js/echarts.js"></script>
+    <script>
+        function ajaxb() {
+            console.log(33333)
+            $.ajax({
+                url: "http://192.168.21.157:51002/data/source_add",
+                // url: "http://192.168.21.157:51002/data/query_tables",
+                data: JSON.stringify({
+                    "id": 1
+                    //     "dataSourceFormat":"1",
+                    // "ip":"192.168.10.88",
+                    // "port":"3306",
+                    // "dbName":"dbdm_dev",
+                    // "userName":"root",
+                    // "pwd":"Sj123456"
+                }),
+                type: "post",
+                // dataType:"json",
+                contentType: "application/json",
+                success: function (res) {
+                    console.log(res)
+                }
+            })
+        }
+
+        // 加载页面方法！！！
+        $("#E_infoMation").click(function () {
+            $(".mainBody_right_Number1").show().siblings().hide();
+        });
+
+        console.log($(window).width())
+
+
+
+
+        //  echarts图表
+        setTimeout(function () {
+            CPU(60)
+            MemoryFootprint(50)
+        }, 200)
+        // CPU占用状态折线图
+        function CPU(data) {
+            var myChart = echarts.init(document.getElementById('CPU_echart'));
+            // 指定图表的配置项和数据
+            var option = {
+                series: [{
+                    type: 'pie',
+                    radius: '65%',
+                    center: ['50%', '50%'],
+                    selectedMode: 'single',
+                    // 去掉折线尾巴
+                    itemStyle: {
+                        normal: {
+                            labelLine: {
+                                show: false
+                            }
+                        },
+                    },
+                    data: [{
+                            value: data
+                        },
+                        {
+                            value: 100 - data
+                        },
+                    ],
+                }],
+                color: ["aqua", "#ccc"],
+                label: {
+                    show: false
+                },
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        }
+        //  内存占用状态
+        function MemoryFootprint(data) {
+            var myChart = echarts.init(document.getElementById('Memory_footprint_echart'));
+            // 指定图表的配置项和数据
+            var option = {
+                series: [{
+                    type: 'pie',
+                    radius: '65%',
+                    center: ['50%', '50%'],
+                    selectedMode: 'single',
+                    // 去掉折线尾巴
+                    itemStyle: {
+                        normal: {
+                            labelLine: {
+                                show: false
+                            }
+                        },
+                    },
+                    data: [{
+                            value: data
+                        },
+                        {
+                            value: 100 - data
+                        },
+                    ],
+                }],
+                color: ["aqua", "#ccc"],
+                label: {
+                    show: false
+                },
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        }
+    </script>
+
+</body>
+
+</html>

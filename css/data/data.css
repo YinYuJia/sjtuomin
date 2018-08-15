@@ -1,0 +1,110 @@
+.bgimg {
+    background:url("../../img/data/u214.png") no-repeat 30px 10px;
+}
+
+.bgimg2 {
+    background:url("../../img/data/u215.png") no-repeat 30px 10px;
+}
+
+#tableData {
+    width: 96%;
+    border: 1px solid #ccc;
+    height: 60%;
+    margin-left: 30px;
+}
+
+
+
+.ctrl_page {
+    width: 200px;
+    height: 30px;
+    background-color: aqua;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.button {
+    height: 30px;
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    border:1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
+
+.button:nth-child(1) {
+    border-left: 1px solid black;
+}
+
+.Span3 {
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: black;
+    background-color: #fff;
+}
+
+#dbSourceListContainer {
+    display: inline-block;
+    width: 100%;
+    height: 550px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top: 15px;
+}
+
+#control {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    position: absolute;
+    right: -20px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.save {
+    display: inline-block;
+    background-color: white;
+    font-size: 13px;
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    font-size: 16px;
+}
+.save:hover {
+    background-color: #ccc;
+    outline: none;
+  }
+@media screen and (max-width:1200px) {
+    #btns {
+        text-align: left;
+    }
+    #query,#reset {
+        width: 80px;
+    }
+    .Footer .Span2 {
+        right: 35%;
+    }
+    .ctrl_page {
+        right: 100px;
+    }
+}
+@media screen and (max-width:992px) {
+    #query,#reset {
+        width: 55px;
+    }
+    #sourceNameText,#sourceFormatSelect,#sourceTypeSelect {
+
+        width: 100px;
+    }
+}

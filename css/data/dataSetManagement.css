@@ -1,0 +1,171 @@
+.bgimg {
+    background: url("../../img/data/u214.png") no-repeat 30px 10px;
+}
+
+.bgimg2 {
+    background: url("../../img/data/u215.png") no-repeat 30px 10px;
+}
+
+.rotate {
+    transform: rotate(90deg) translateX(-7px);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.sourseSonHeight {
+    height: 34px !important;
+    background-color: white !important;
+    margin-top: 1px !important;
+    border-bottom: 1px solid #ccc !important;
+    line-height: 34px !important;
+    cursor: pointer;
+    font-size: 14px;
+    text-indent: 70px;
+}
+
+.bgc {
+    background-color: aqua !important;
+}
+
+#dbSourceListContainer {
+    display: inline-block;
+    width: 100%;
+    height: 550px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+.userNamelist1 {
+    height: 150px;
+    width: 100%;
+    /* line-height: 70px; */
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.userNamelist1 textarea {
+    height: 100%;
+    width: 80%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 175px;
+}
+
+.userNamelist1 i {
+    display: block;
+    height: 100%;
+    width: 80%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 175px;
+    border: 1px solid black;
+}
+.userNamelist1 span {
+    display: inline-block;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    text-align: right;
+}
+.list1 {
+    height: 40px;
+    width: 75%;
+    /* line-height: 70px; */
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    /* background-color: red; */
+    line-height: 40px;
+    padding-left: 20px;
+}
+.userNamelist1 .list1 span {
+    display: inline-block;
+    width: 100px;
+    position: static;
+    color: black;
+}
+.list1 input {
+    height: 30px;
+    width: 75%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+.list2 {
+    height: 40px;
+    width: 75%;
+    /* line-height: 70px; */
+    font-size: 20px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    /* background-color: red; */
+    line-height: 40px;
+    padding-left: 20px;
+}
+.userNamelist1 .list2 span {
+    display: inline-block;
+    width: 100px;
+    position: static;
+    color: black;
+
+}
+.list2 input {
+    height: 30px;
+    width: 75%;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+.userNamelist1 u {
+   position: absolute;
+   width: 150px;
+   height: 89px;
+   border: 1px solid black;
+   left: 80%;
+   top: 40px;
+   border-radius: 5px;
+   text-align: center;
+   line-height: 89px;
+   font-size: 20px;
+   cursor: pointer;
+   text-decoration: none;
+   font-weight: 700;
+   color: black;
+}
+.userNamelist1 u:hover {
+    background-color: #ccc;
+}
+.save {
+    display: inline-block;
+    background-color: white;
+    font-size: 13px;
+    border-radius: 3px;
+    margin-top: 5px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    font-size: 16px;
+}
+.save:hover {
+    background-color: #ccc;
+    outline: none;
+  }
