@@ -112,7 +112,7 @@ function tips(a,str) {
         }).html(str)
         setTimeout(function() {
             $("#tips").hide().html("")
-        },3000)
+        },3000);
     }else if ( a == "F") {
       $("#tips").fadeIn().css({
           "backgroundColor":"pink"
