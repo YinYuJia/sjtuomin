@@ -71,7 +71,7 @@
     })
     // 保存新增发现规则
     $("#discoverRulesSave").on("click",function() {
-        alert($(this).val())
+        tips("T","闪捷信息");
     })
     // 新增测试
     $("#Test").on("click",function() {
