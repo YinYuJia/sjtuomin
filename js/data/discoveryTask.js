@@ -170,3 +170,7 @@
         onLoadError: function () {}
     });
 })();
+
+window.onload = function() {
+    checkCookie()
+}

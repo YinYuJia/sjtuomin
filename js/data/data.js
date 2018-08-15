@@ -166,6 +166,10 @@
     $("#reSet").on("click", function () {
         alert($(this).val())
     })
+    // 新增保存
+    $("#newAddSave").on("click",function() {
+        tips("F","闪捷信息")
+    })
     // 新增页面取消
     $("#newAddCancel").on("click",function () {
         $(".mainBody_right_Number1").show().siblings().hide()

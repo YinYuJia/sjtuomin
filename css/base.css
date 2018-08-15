@@ -620,7 +620,7 @@ font-size: 16px;
 /* 提示框 */
 #tips {
   position: absolute;
-  height: 50px;
+  height: 55px;
   width: 600px;
   top: 78px;
   z-index: 99999;
@@ -632,4 +632,5 @@ font-size: 16px;
   color: black;
   text-align: center;
   line-height:50px;
+  border-radius: 0 0 5px 5px ;
 }
