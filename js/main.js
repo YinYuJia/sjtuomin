@@ -105,15 +105,15 @@ function loadGif(a) {
     }
 }
 // 提示函数  参数设置("T" 正确 ---- "F"  错误)
-function tips(T,str) {
-    if (T == "T") {
+function tips(a,str) {
+    if (a == "T") {
         $("#tips").fadeIn().css({
-            "backgroundColor":"#0f0"
+            "backgroundColor":"#aaffaa"
         }).html(str)
         setTimeout(function() {
             $("#tips").hide().html("")
         },3000)
-    }else if ( T == "F") {
+    }else if ( a == "F") {
       $("#tips").fadeIn().css({
           "backgroundColor":"pink"
       }).html(str);
