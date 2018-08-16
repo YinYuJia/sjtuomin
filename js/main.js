@@ -96,7 +96,7 @@ function SideBarShowOrHide(a, b) {
     }
 }
 
-//  loadGif   参数设置( show 弹出 --- hide  隐藏)
+//  loadGif   参数设置( "show" 弹出 --- "hide"  隐藏)
 function loadGif(a) {
     if (a == "hide") {
         $("#loadGif").hide();
